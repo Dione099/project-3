@@ -2,21 +2,18 @@
 using namespace std;
 
 int main(){
-  //initiaize the random number generator
- srand(time(0)); 
+  //put two numbers needed to add
+ int num1=247;
+  int num2=129;
 
-  //generate two random numbers between 1 and 999
-  int num1 = rand() % 10 + 1;
-  int num2 = rand() % 10 + 1;
-
-  cout<< "What is " << num1 << " + " << num2 << "? " << endl;
-
+ std:: cout<< "What is the sum" << num1 << " + " << num2 << "? " << endl;
+ 
   //user would now solve problem
-  cout<<"Press any key to see the answer" << endl;
-    cin.get();
+  std::cout<<"Press any key to see the answer" << std::endl;
+    std::cin.get();
   //display the answer
   int answer = num1 + num2;
-  cout <<"The correct answer is " << answer << endl;
+  std::cout <<"The correct answer is " << answer << endl;
 
     return 0;
 }
