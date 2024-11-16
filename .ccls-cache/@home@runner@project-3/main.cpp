@@ -8,16 +8,15 @@ const double butterPer48 = 1.0;
 const double flourPer48 = 2.75;
 const int cookiesPerBatch = 48;
 
-  int desiredCookies;
+  int desiredcookies;
   cout << "How many cookies do you want to make:";
-  cin >> desiredCookies;
-  double ratio = static_cast<double>(desiredCookies) / cookiesPerBatch;
-  
-  double sugarNeeded = (sugarPer48 / cookiesPerBatch) * desiredCookies;
-  double butterNeeded = (butterPer48 / cookiesPerBatch) * desiredCookies;
-  double flourNeeded = (flourPer48 / cookiesPerBatch) * desiredCookies;
+  cin >> desiredcookies;
+  static_cast<double>(desiredcookies) / cookiesPerBatch;cookiesPerBatch;
+  double sugarNeeded = (sugarPer48 / cookiesPerBatch) * desiredcookies;
+  double butterNeeded = (butterPer48 / cookiesPerBatch) * desiredcookies;
+  double flourNeeded = (flourPer48 / cookiesPerBatch) * desiredcookies;
 
-  cout << "To make " << desiredCookies << " cookies, you will need:\n";
+  cout << "To make " << desiredcookies << " cookies, you will need:\n";
   cout << sugarNeeded << " cups of sugar\n";
   cout << butterNeeded << " cups of butter\n";
   cout << flourNeeded << " cups of flour\n";

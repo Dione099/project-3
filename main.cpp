@@ -11,7 +11,6 @@ const int cookiesPerBatch = 48;
   int desiredCookies;
   cout << "How many cookies do you want to make:";
   cin >> desiredCookies;
-  double ratio = static_cast<double>(desiredCookies) / cookiesPerBatch;
   
   double sugarNeeded = (sugarPer48 / cookiesPerBatch) * desiredCookies;
   double butterNeeded = (butterPer48 / cookiesPerBatch) * desiredCookies;
